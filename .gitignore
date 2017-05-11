@@ -38,4 +38,6 @@ octave-core
 *.gz
 .DS_Store
 README.html
+.cproject
+.project
 
