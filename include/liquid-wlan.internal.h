@@ -24,7 +24,7 @@
 #include "config.h"
 
 #include <complex.h>
-#include <liquid/liquid.h>
+#include <liquid.h>
 
 #include "liquid-wlan.h"
 

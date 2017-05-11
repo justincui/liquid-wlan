@@ -83,6 +83,12 @@ AC_CHECK_HEADERS(fftw3.h)
 AC_CHECK_LIB([fftw3f], [fftwf_plan_dft_1d], [],
              [AC_MSG_WARN(fftw3 library useful but not required)],
              [])
+
+CFLAGS="$CFLAGS -I../liquid-dsp/include"
+CPPFLAGS="$CPPFLAGS -I../liquid-dsp/include"
+AC_CHECK_HEADERS(liquid.h)
+
+LDFLAGS="$LDFLAGS -L../liquid-dsp -L../kissfft/.libs -lkissfft"        
 AC_CHECK_LIB([liquid], [modem_create], [],
              [AC_MSG_ERROR(Need liquid-dsp library!)],
              [])

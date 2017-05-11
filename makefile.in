@@ -37,7 +37,7 @@ srcdir = @srcdir@
 prefix = @prefix@
 exec_prefix = @exec_prefix@
 VPATH = @srcdir@
-include_dirs	:= . include
+include_dirs	:= . include ../liquid-dsp/include
 vpath %.h $(include_dirs)
 modulesdir = src
 
